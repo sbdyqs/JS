@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>轮播</title>
+</head>
+<body>
+    <img src="img2/banner_1.jpg" width="100%" id="img">
+
+    <script>
+        var img = document.getElementById("img");
+        var num = 1;
+
+        function fun() {
+            num ++;
+            if (num > 3) {
+                num = 1;
+            }
+            img.src = "img2/banner_" + num + ".jpg"
+        }
+        setInterval(fun,2000);
+    </script>
+</body>
+</html>
